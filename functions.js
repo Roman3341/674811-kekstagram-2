@@ -30,3 +30,18 @@ const stringToNumber = (string) => {
 };
 
 stringToNumber('полке 21312.5 год44');
+
+//Сравнение времени
+const timeCompare = function (start, end, meetStart, meetDuration) {
+  const toMinutes = function (time) {
+    const [hours, minutes] = time.split(':').map(Number);
+    const minutesCount = hours * 60 + minutes;
+    return minutesCount;
+  };
+  return !(
+    toMinutes(meetStart) < toMinutes(start) ||
+    toMinutes(meetStart) + meetDuration > toMinutes(end)
+  );
+};
+console.log(timeCompare('8:00', '17:30', '08:00', 900));
+
