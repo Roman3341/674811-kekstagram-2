@@ -53,7 +53,7 @@ const NAMES = [
 //Функция генерации массива объектов описания фото
 const photos = function () {
   const photosArr = [];
-  for (let i = 0; i < 25; i++) {
+  for (let i = 1; i < 26; i++) {
     const commentsArr = [];
     for (let j = 0; j < getRandomInt(0, 30); j++) {
       commentsArr.push({
@@ -79,5 +79,4 @@ const photos = function () {
 };
 
 photos();
-
-console.log(photos());
+export {photos};
