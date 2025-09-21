@@ -1,4 +1,4 @@
-import { getRandomInt } from './util';
+import { getRandomInt } from '../js/util.js';
 
 const PHOTO_DESCRIPTIONS = [
   'Солнечный закат над горами',
