@@ -1,2 +1,3 @@
-import './674811-kekstagram-2/../data.js';
-import './674811-kekstagram-2/../photos.js';
+import './data.js';
+import './photos.js';
+import './util.js';
