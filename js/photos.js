@@ -1,4 +1,4 @@
-import { photos } from '../js/data.js';
+import { photos } from './data.js';
 const photosArr = photos();
 const container = document.querySelector('.pictures');
 const fragment = document.createDocumentFragment();
@@ -23,5 +23,4 @@ const photosInfo = function() {
 };
 photosInfo();
 
-export {photosInfo};
 export {photosArr};
